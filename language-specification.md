@@ -8,40 +8,47 @@ A variable can only be assigned to one of the following:
 4. A function call 
 
 Here are examples:
-`x = 7`
-`x = y`
-x = x + 1
-x = a * b
-x = my_func(a, b, c)
+
+    x = 7
+    x = y
+    x = x + 1
+    x = a * b
+    x = my_func(a, b, c)
 
 If the specified variable doesn't already exist in the current scope, it will be initialized when assigned.
 
-Valid binary operators are: +, -, *, /, %, >, <, >=, <=, ==, !=, &&, ||
+Valid binary operators are: 
+
+    +, -, *, /, %, >, <, >=, <=, ==, !=, &&, ||
 
 If statements are written as such:
-if ([condition]) {
 
-}
-else {
+    if ([condition]) {
 
-}
-[condition] must be a binary operation.
+    }
+    else {
+
+    }
+`[condition]` must be a binary operation.
 
 While loops are similar:
-while ([condition]) {
 
-}
+    while ([condition]) {
+
+    }
 
 Functions are defined as such:
-function (a, b) {
-    a = a + 1
-    return a * b
-}
+
+    function (a, b) {
+        a = a + 1
+        return a * b
+    }
+
 A function can have any number of parameters.
 A function does not have to have a return statement, but if it does, 
 the return value must be a literal, variable, binary operation, or function call.
 Functions are not able to access any variables outside their scope.
 Functions cannot be recursive.
 
-Finally, you can use print() to print things.
+Finally, you can use `print()` to print things.
 The argument to print must be a literal, variable, binary operation, or function call.
