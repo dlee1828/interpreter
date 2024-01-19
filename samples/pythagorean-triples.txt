@@ -1,0 +1,25 @@
+function print_pythagorean_triples(n) {
+    a = 1
+    while (a <= n) {
+        b = a
+        while (b <= n) {
+            c = b 
+            while (c <= n) {
+                a_squared = a * a
+                b_squared = b * b
+                sum = a_squared + b_squared
+                c_squared = c * c
+                if (sum == c_squared) {
+                    print(a)
+                    print(b)
+                    print(c)
+                }
+                c = c + 1
+            }
+            b = b + 1
+        }
+        a = a + 1
+    }
+}
+
+print_pythagorean_triples(20)

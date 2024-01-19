@@ -1,0 +1,21 @@
+function next_collatz(n) {
+    remainder = n % 2
+    if (remainder == 0) {
+        return n / 2
+    }
+    else {
+        n = n * 3
+        n = n + 1
+        return n
+    } 
+}
+
+function print_collatz_sequence(n) {
+    while (n != 1) {
+        print(n)
+        n = next_collatz(n)
+    }
+    print(1)
+}
+
+print_collatz_sequence(100)
